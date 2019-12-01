@@ -18,6 +18,9 @@
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/smnielsen/olt-lint-config.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepublish": "safe-publish-latest"
   },
