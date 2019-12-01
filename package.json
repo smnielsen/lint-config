@@ -1,0 +1,53 @@
+{
+  "name": "smn-linting",
+  "description": "Monorepo for lint configurations",
+  "private": true,
+  "scripts": {
+    "eslint": "eslint '**/packages/**/*.{js,jsx}'",
+    "prettier": "prettier **/packages/**/*.{js,md}",
+    "lint": "yarn run eslint && yarn run prettier -l",
+    "lint:fix": "yarn run eslint --fix && yarn run prettier --write",
+    "bootstrap": "lerna bootstrap",
+    "version": "lerna version",
+    "publishChanged": "lerna publish from-package --yes"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.org/smnielsen/smn-linting.git"
+  },
+  "keywords": [
+    "linting",
+    "monorepo",
+    "olt",
+    "smnielsen",
+    "javascript"
+  ],
+  "author": "Simon Nielsen <simon.nielsen@netlight.com>",
+  "license": "UNLICENSED",
+  "homepage": "https://github.org/smnielsen/smn-linting#readme",
+  "devDependencies": {
+    "husky": "^3.0.9",
+    "lerna": "^3.18.1",
+    "lint-staged": "^9.4.2"
+  },
+  "lint-staged": {
+    "**/*.{js}": [
+      "yarn run lint:fix",
+      "git add"
+    ],
+    "**/*.{md}": [
+      "yarn run prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

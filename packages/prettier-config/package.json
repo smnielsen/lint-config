@@ -1,0 +1,26 @@
+{
+  "name": "@smnielsen/prettier-config",
+  "version": "0.1.1",
+  "description": "Prettier config for smnielsen products",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "config",
+    "javascript"
+  ],
+  "author": "Simon <simonnielsen@live.se>",
+  "homepage": "https://bitbucket.org/smnielsen/olt-lint-config/packages/prettier-config#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/smnielsen/olt-lint-config.git"
+  },
+  "scripts": {
+    "prepublish": "safe-publish-latest"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "safe-publish-latest": "^1.1.3"
+  }
+}
