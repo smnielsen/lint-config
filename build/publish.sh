@@ -7,7 +7,10 @@ function log() {
   echo "    >> $msg"
 }
 
-export NPM_TOKEN=$NPM_TOKEN_PUBLISH
+if [ -z $NPM_TOKEN ]; then
+  log "WARNING: NPM_TOKEN not set, please set before publishing"
+  exit 1
+fi
 
 log "Bootstrapping linting monorepo"
 yarn bootstrap
