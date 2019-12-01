@@ -9,12 +9,12 @@
     "javascript"
   ],
   "author": "Simon <simonnielsen@live.se>",
-  "homepage": "https://bitbucket.org/smnielsen/olt-lint-config/packages/prettier-config#readme",
+  "homepage": "https://github.org/smnielsen/smn-linting/packages/prettier-config#readme",
   "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/smnielsen/olt-lint-config.git"
+    "url": "git+ssh://git@github.org/smnielsen/smn-linting.git"
   },
   "publishConfig": {
     "access": "public"

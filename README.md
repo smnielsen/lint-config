@@ -92,8 +92,6 @@ This repository is based on [Lerna](https://github.com/lerna/lerna) which is a t
 NOTE: Publishing to NPM requires a publish token, this is setup in bitbucket pipelines so any package can only be released after merge to master.
 
 1. Check what will be the next version for your packages
-2. Update the changelog `CHANGELOG.md` and add the new versions for each package (add only changed packages)
-3. Update the version and make it ready for publishing: `$ yarn run version` (**not `yarn version`**)
-4. (the script above already pushed the changes)
-5. Merge the PR: make sure you have appropriate approvals.
-6. Open the last Pipeline and manually publish your changes [here](https://bitbucket.org/smnielsen/olt-lint-config/addon/pipelines/home#!/results/branch/master/page/1)
+2. Update the changelog `CHANGELOG.md` for each package
+3. Push changes to repository
+4. Publish to NPM by running `$ make publish`.
