@@ -11,7 +11,7 @@
     "node"
   ],
   "author": "Simon <simonnielsen@live.se>",
-  "homepage": "https://github.org/smnielsen/smn-linting/packages/eslint-config#readme",
+  "homepage": "https://github.com/smnielsen/smn-linting/blob/master/packages/eslint-config/README.md",
   "license": "MIT",
   "main": "index.js",
   "repository": {

@@ -8,8 +8,8 @@
     "config",
     "javascript"
   ],
-  "author": "Simon <simonnielsen@live.se>",
-  "homepage": "https://github.org/smnielsen/smn-linting/packages/prettier-config#readme",
+  "author": "Simon Nielsen <simonnielsen@live.se>",
+  "homepage": "https://github.com/smnielsen/smn-linting/blob/master/packages/prettier-config/README.md",
   "license": "MIT",
   "main": "index.js",
   "repository": {
