@@ -2,6 +2,7 @@
   "name": "smn-linting",
   "description": "Monorepo for lint configurations",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "eslint": "eslint '**/packages/**/*.{js,jsx}'",
     "prettier": "prettier **/packages/**/*.{js,md}",
