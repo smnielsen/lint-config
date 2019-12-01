@@ -1,15 +1,8 @@
 # @smnielsen/prettier-config CHANGELOG
 
-## 2019-11-04 - v0.1.1
-
-### CHANGED
-
-- Semi-colon should be forced as per AirBnb rules
-- We only force trailingComma and singleQuote
-
-## 2019-11-04 - v0.1.0
+## 2019-12-01 - v0.0.1
 
 ### ADDED
 
-- Shared prettier config for smnielsen services
+- Shared prettier config
 - README that descripes how to use it

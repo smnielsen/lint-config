@@ -1,6 +1,6 @@
 # @smnielsen/eslint-config CHANGELOG
 
-## 2019-11-04 - v0.1.0
+## 2019-12-01 - v0.0.1
 
 ### ADDED
 
