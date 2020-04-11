@@ -75,4 +75,4 @@ module.exports = {
     // Looks better to define first and then export
     'import/no-named-as-default': 'off',
   },
-};
+}

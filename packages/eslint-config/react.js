@@ -48,4 +48,4 @@ module.exports = {
     // Annoying
     'react/destructuring-assignment': 'off',
   },
-};
+}

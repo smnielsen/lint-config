@@ -18,4 +18,4 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     curly: ['error', 'multi-line'],
   },
-};
+}
