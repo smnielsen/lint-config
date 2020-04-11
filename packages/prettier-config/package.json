@@ -23,7 +23,7 @@
     "prepublish": "safe-publish-latest"
   },
   "devDependencies": {
-    "prettier": "^1.18.2",
+    "prettier": "^2.0.4",
     "safe-publish-latest": "^1.1.3"
   }
 }
