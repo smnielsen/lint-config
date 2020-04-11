@@ -38,11 +38,11 @@
   "lint-staged": {
     "**/*.{js}": [
       "yarn run lint:fix",
-      "git add"
+      "git add ."
     ],
     "**/*.{md}": [
       "yarn run prettier --write",
-      "git add"
+      "git add ."
     ]
   },
   "husky": {
