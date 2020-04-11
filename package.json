@@ -1,5 +1,5 @@
 {
-  "name": "smn-linting",
+  "name": "lint-config",
   "description": "Monorepo for lint configurations",
   "private": true,
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.org/smnielsen/smn-linting.git"
+    "url": "git+ssh://git@github.org/smnielsen/lint-config.git"
   },
   "keywords": [
     "linting",
@@ -29,7 +29,7 @@
   ],
   "author": "Simon Nielsen <simon.nielsen@netlight.com>",
   "license": "MIT",
-  "homepage": "https://github.org/smnielsen/smn-linting#readme",
+  "homepage": "https://github.org/smnielsen/lint-config#readme",
   "devDependencies": {
     "husky": "^3.0.9",
     "lerna": "^3.18.1",
