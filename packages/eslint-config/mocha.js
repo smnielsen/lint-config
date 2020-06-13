@@ -1,6 +1,6 @@
 module.exports = {
-  plugins: ['security', 'mocha', 'chai-expect', 'chai-friendly'],
-  extends: ['plugin:security/recommended'],
+  plugins: ['mocha', 'chai-expect', 'chai-friendly'],
+  extends: [],
   env: {
     node: true,
     es6: true,

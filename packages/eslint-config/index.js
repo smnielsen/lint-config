@@ -5,8 +5,9 @@ module.exports = {
     'plugin:import/warnings',
     'eslint:recommended',
     'plugin:promise/recommended',
+    'plugin:security/recommended',
   ],
-  plugins: ['promise', 'import'],
+  plugins: ['promise', 'import', 'security'],
   env: {
     commonjs: true,
     es6: true,
@@ -33,6 +34,9 @@ module.exports = {
     ],
   },
   rules: {
+    // security stuff
+    'security/detect-object-injection': 'off',
+    'security/detect-non-literal-fs-filename': 'off',
     // warning
     'no-warning-comments': 'warn',
     'no-unused-vars': 'warn',

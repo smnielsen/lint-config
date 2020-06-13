@@ -4,19 +4,15 @@ A shared [ESLint](https://eslint.org) config for @smnielsen. Rules are carefully
 
 ## Installation
 
-### Get started by running this command in the root of your project:
+Depending which linting you want to run you need to install different set of plugins. This module will not force install any dependencies.
+
+### To start install the base that always is required
 
 ```sh
-yarn add -D eslint @smnielsen/eslint-config
+yarn add -D eslint @smnielsen/eslint-config 
 ```
 
-or use npm
-
-```sh
-npm install --save-dev eslint @smnielsen/eslint-config
-```
-
-### Then add an `.eslintrc.json` file with the following content to the root of your project:
+### Then add an `.eslintrc.json` file with the following content to the root of your project and install dependencies
 
 ```json
 {
@@ -24,13 +20,25 @@ npm install --save-dev eslint @smnielsen/eslint-config
 }
 ```
 
-Add linting for React/JSX
+```terminal
+yarn add -D eslint-config-standard eslint-plugin-import eslint-plugin-promise eslint-plugin-node eslint-plugin-security eslint-plugin-standard
+```
+
+#### Add linting for React/JSX
 
 ```json
 {
   "extends": ["@smnielsen", "@smnielsen/eslint-config/react"]
 }
 ```
+
+##### Install plugins
+
+```terminal
+yarn add -D eslint-plugin-react eslint-config-react-app eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-react-hooks babel-eslint eslint-plugin-flowtype react
+```
+
+#### Add linting with Prettier
 
 If you're using Prettier as well, use this to run with prettier.
 Make sure the prettier config always is last
@@ -41,13 +49,27 @@ Make sure the prettier config always is last
 }
 ```
 
-Add linting for Node.js:
+##### Install plugins
+
+```terminal
+yarn add -D eslint-config-prettier
+```
+
+#### Add linting for Mocha and Chai:
 
 ```json
 {
-  "extends": ["@smnielsen", "@smnielsen/eslint-config/node"]
+  "extends": ["@smnielsen", "@smnielsen/eslint-config/mocha"]
 }
 ```
+
+##### Install plugins
+
+```terminal
+yarn add -D eslint-plugin-mocha eslint-plugin-chai-expect eslint-plugin-chai-friendly
+```
+
+#### Add linting with TypeScript
 
 If you want to use TypeScript, that's fine:
 
@@ -57,7 +79,14 @@ If you want to use TypeScript, that's fine:
 }
 ```
 
-Or use them all at once:
+##### Install plugins
+
+```terminal
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
+```
+
+
+#### Or use them all at once:
 
 ```json
 {
@@ -70,5 +99,9 @@ Or use them all at once:
   ]
 }
 ```
+
+##### Install plugins
+
+_Don't forget to install all plugins from above sections._
 
 For more information see: http://eslint.org/docs/user-guide/configuring
