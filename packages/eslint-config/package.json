@@ -1,6 +1,6 @@
 {
-  "name": "@smn/eslint-config",
-  "version": "0.2.0",
+  "name": "@smnielsen/eslint-config",
+  "version": "0.1.0",
   "description": "ESLint configuration for smnielsen products",
   "keywords": [
     "eslint",
@@ -46,5 +46,6 @@
     "prettier": "^1.18.2",
     "safe-publish-latest": "^1.1.3",
     "typescript": "^3.6.4"
-  }
+  },
+  "gitHead": "e95e06d85c6366c919602de1e2ec55bd665813da"
 }
