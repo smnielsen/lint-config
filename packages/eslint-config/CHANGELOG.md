@@ -1,6 +1,6 @@
 # @smnielsen/eslint-config CHANGELOG
 
-## 2020-06-13 - v1.0.0
+## 2020-06-13 - v0.3.0
 
 ### CHANGED
 
