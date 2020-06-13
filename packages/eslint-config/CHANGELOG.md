@@ -1,12 +1,12 @@
 # @smnielsen/eslint-config CHANGELOG
 
-## 2020-06-13 - v0.0.2
+## 2020-06-13 - v0.2.0
 
 ### CHANGED
 
 - All dependencies as devDependencies
 
-## 2019-12-01 - v0.0.1
+## 2019-12-01 - v0.1.0
 
 ### ADDED
 
