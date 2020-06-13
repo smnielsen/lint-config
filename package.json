@@ -14,6 +14,11 @@
   "workspaces": {
     "packages": [
       "packages/*"
+    ],
+    "nohoist": [
+      "**/webpack-dev-server",
+      "**/babel-loader",
+      "**/babel-jest"
     ]
   },
   "repository": {
