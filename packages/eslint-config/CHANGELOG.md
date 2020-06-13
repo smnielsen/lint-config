@@ -1,5 +1,16 @@
 # @smnielsen/eslint-config CHANGELOG
 
+## 2020-06-13 - v1.0.0
+
+### CHANGED
+
+- changed from node to mocha
+- Moved security to default eslint
+
+### ADDED
+
+- Added README helpers for installing deps
+
 ## 2020-06-13 - v0.2.0
 
 ### CHANGED
