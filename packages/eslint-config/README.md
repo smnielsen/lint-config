@@ -84,13 +84,13 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser typescrip
 
 ### Application Ready Examples
 
-#### React + Typescript + Prettier
+#### Vue + Typescript + Prettier
 
 ```json
 {
   "extends": [
     "@smnielsen",
-    "@smnielsen/eslint-config/react",
+    "@smnielsen/eslint-config/vue",
     "@smnielsen/eslint-config/typescript",
     "@smnielsen/eslint-config/prettier"
   ]
