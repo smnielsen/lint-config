@@ -35,10 +35,10 @@ module.exports = require('@smnielsen/prettier-config')
 
 ```
 "scripts": {
-  "eslint": "eslint 'src/**/*.{js,ts,tsx,jsx}'",
-  "prettier": "prettier src/**/*.{js,ts,tsx,jsx,json,md}",
-  "lint": "yarn run eslint && yarn run prettier -l",
-  "lint:fix": "yarn run eslint --fix && yarn run prettier --write",
+  "eslint": "eslint --ext js,jsx,ts,tsx,vue src",
+  "prettier": "prettier --check \"src/**/*.+(js|jsx|ts|tsx|vue|json|md)\"",
+  "lint": "yarn run eslint && yarn run prettier",
+  "lint:fix": "yarn run eslint --fix && yarn run prettier --write"
   ....
 }
 ```
@@ -52,13 +52,11 @@ Use Husky + lint-staged to setup pre-commit hook for always keeping lint files i
 
 ```
 "lint-staged": {
-  "**/*.{js,jsx,ts,tsx}": [
-    "yarn run lint:fix",
-    "git add"
+  "**/*.{js,jsx,ts,tsx,vue}": [
+    "yarn run lint:fix"
   ],
-  "**/*.{md,scss,css}": [
-    "yarn run prettier --write",
-    "git add"
+  "**/*.{md,scss,css,json}": [
+    "yarn run prettier --write"
   ]
 },
 "husky": {
