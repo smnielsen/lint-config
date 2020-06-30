@@ -1,5 +1,16 @@
 # @smnielsen/eslint-config CHANGELOG
 
+## 2020-06-13 - v0.4.0
+
+### ADDED
+
+- Added Vue linting configuration
+
+### CHANGED
+
+- Changed the README to be up-to-date
+- Updated default dependencies to always include the default
+
 ## 2020-06-13 - v0.3.0
 
 ### CHANGED
