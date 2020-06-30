@@ -1,6 +1,5 @@
 module.exports = {
   extends: ['plugin:vue/essential', 'eslint:recommended', '@vue/prettier'],
-  plugins: ['jsx-a11y', 'react', 'react-hooks'],
   env: {
     commonjs: true,
     browser: true,

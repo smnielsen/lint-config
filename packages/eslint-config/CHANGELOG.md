@@ -1,6 +1,16 @@
 # @smnielsen/eslint-config CHANGELOG
 
-## 2020-06-13 - v0.4.0
+## 2020-07-01 - v0.4.1
+
+### CHANGED
+
+- Updated README to add the vue config
+
+### REMOVED
+
+- Removed React, jsx/a11y plugins not meant for Vue config
+
+## 2020-07-01 - v0.4.0
 
 ### ADDED
 

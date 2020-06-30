@@ -46,7 +46,7 @@ yarn add -D eslint-plugin-react eslint-config-react-app eslint-config-prettier e
 ##### Install plugins
 
 ```terminal
-yarn add -D vue @vue/eslint-config-prettier
+yarn add -D vue @vue/eslint-config-prettier eslint-plugin-jsx-a11y
 ```
 
 #### Add linting with Prettier
@@ -82,27 +82,23 @@ If you want to use TypeScript, that's fine:
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
 ```
 
-### Application Ready Examples
+### If you use Mocha+Chai instead of Jest
 
-#### Vue + Typescript + Prettier
+#### Add linting for Mocha and Chai:
 
 ```json
 {
-  "extends": [
-    "@smnielsen",
-    "@smnielsen/eslint-config/vue",
-    "@smnielsen/eslint-config/typescript",
-    "@smnielsen/eslint-config/prettier"
-  ]
+  "extends": ["@smnielsen", "@smnielsen/eslint-config/mocha"]
 }
 ```
 
 ##### Install plugins
 
 ```terminal
-yarn add -D vue @vue/eslint-config-prettier eslint-config-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
+yarn add -D eslint-plugin-mocha eslint-plugin-chai-expect eslint-plugin-chai-friendly
 ```
 
+### Application Ready Examples
 
 #### React + Typescript + Prettier
 
@@ -123,20 +119,23 @@ yarn add -D vue @vue/eslint-config-prettier eslint-config-prettier @typescript-e
 yarn add -D eslint-plugin-react eslint-config-react-app eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-react-hooks babel-eslint eslint-plugin-flowtype react eslint-config-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
 ```
 
-### If you use Mocha+Chai instead of Jest, also use
-
-#### Add linting for Mocha and Chai:
+#### Vue + Typescript + Prettier
 
 ```json
 {
-  "extends": ["@smnielsen", "@smnielsen/eslint-config/mocha"]
+  "extends": [
+    "@smnielsen",
+    "@smnielsen/eslint-config/vue",
+    "@smnielsen/eslint-config/typescript",
+    "@smnielsen/eslint-config/prettier"
+  ]
 }
 ```
 
 ##### Install plugins
 
 ```terminal
-yarn add -D eslint-plugin-mocha eslint-plugin-chai-expect eslint-plugin-chai-friendly
+yarn add -D vue @vue/eslint-config-prettier eslint-config-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
 ```
 
 For more information see: http://eslint.org/docs/user-guide/configuring
