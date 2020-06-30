@@ -1,6 +1,6 @@
 {
   "name": "@smnielsen/eslint-config",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "ESLint configuration for smnielsen products",
   "keywords": [
     "eslint",
@@ -27,8 +27,8 @@
   "dependencies": {
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1"
   },
