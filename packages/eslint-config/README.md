@@ -20,10 +20,6 @@ yarn add -D eslint @smnielsen/eslint-config
 }
 ```
 
-```terminal
-yarn add -D eslint-config-standard eslint-plugin-import eslint-plugin-promise eslint-plugin-node eslint-plugin-security eslint-plugin-standard
-```
-
 #### Add linting for React/JSX
 
 ```json
@@ -36,6 +32,21 @@ yarn add -D eslint-config-standard eslint-plugin-import eslint-plugin-promise es
 
 ```terminal
 yarn add -D eslint-plugin-react eslint-config-react-app eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-react-hooks babel-eslint eslint-plugin-flowtype react
+```
+
+
+#### Add linting for Vue
+
+```json
+{
+  "extends": ["@smnielsen", "@smnielsen/eslint-config/vue"]
+}
+```
+
+##### Install plugins
+
+```terminal
+yarn add -D vue @vue/eslint-config-prettier
 ```
 
 #### Add linting with Prettier
@@ -55,20 +66,6 @@ Make sure the prettier config always is last
 yarn add -D eslint-config-prettier
 ```
 
-#### Add linting for Mocha and Chai:
-
-```json
-{
-  "extends": ["@smnielsen", "@smnielsen/eslint-config/mocha"]
-}
-```
-
-##### Install plugins
-
-```terminal
-yarn add -D eslint-plugin-mocha eslint-plugin-chai-expect eslint-plugin-chai-friendly
-```
-
 #### Add linting with TypeScript
 
 If you want to use TypeScript, that's fine:
@@ -85,14 +82,14 @@ If you want to use TypeScript, that's fine:
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
 ```
 
+### Application Ready Examples
 
-#### Or use them all at once:
+#### React + Typescript + Prettier
 
 ```json
 {
   "extends": [
     "@smnielsen",
-    "@smnielsen/eslint-config/node",
     "@smnielsen/eslint-config/react",
     "@smnielsen/eslint-config/typescript",
     "@smnielsen/eslint-config/prettier"
@@ -102,6 +99,44 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser typescrip
 
 ##### Install plugins
 
-_Don't forget to install all plugins from above sections._
+```terminal
+yarn add -D vue @vue/eslint-config-prettier eslint-config-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
+```
+
+
+#### React + Typescript + Prettier
+
+```json
+{
+  "extends": [
+    "@smnielsen",
+    "@smnielsen/eslint-config/react",
+    "@smnielsen/eslint-config/typescript",
+    "@smnielsen/eslint-config/prettier"
+  ]
+}
+```
+
+##### Install plugins
+
+```terminal
+yarn add -D eslint-plugin-react eslint-config-react-app eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-react-hooks babel-eslint eslint-plugin-flowtype react eslint-config-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
+```
+
+### If you use Mocha+Chai instead of Jest, also use
+
+#### Add linting for Mocha and Chai:
+
+```json
+{
+  "extends": ["@smnielsen", "@smnielsen/eslint-config/mocha"]
+}
+```
+
+##### Install plugins
+
+```terminal
+yarn add -D eslint-plugin-mocha eslint-plugin-chai-expect eslint-plugin-chai-friendly
+```
 
 For more information see: http://eslint.org/docs/user-guide/configuring

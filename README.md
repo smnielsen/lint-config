@@ -1,6 +1,6 @@
 # @smnielsen - lint-configurations
 
-This repository holds lint configurations with some default rules based on my own preferences
+This repository holds lint configurations with some default rules based on my own preferences.
 
 - [eslint-config](https://github.com/smnielsen/smn-linting/tree/master/packages/eslint-config)
 
@@ -9,7 +9,7 @@ This repository holds lint configurations with some default rules based on my ow
 ## Installation and Usage
 
 ```
-$ yarn add eslint @smnielsen/eslint-config prettier @smnielsen/prettier-config -D
+$ yarn add -D eslint @smnielsen/eslint-config prettier @smnielsen/prettier-config
 ```
 
 **.eslintrc.js**
@@ -18,11 +18,12 @@ $ yarn add eslint @smnielsen/eslint-config prettier @smnielsen/prettier-config -
 module.exports = {
   extends: [
     '@smnielsen/eslint-config',
-    '@smnielsen/eslint-config/node',
     '@smnielsen/eslint-config/prettier'
   ]
 }
 ```
+
+**Note:** If you use React, TypeScript or Vue. Please view ESLint config options under [eslint-config](https://github.com/smnielsen/smn-linting/tree/master/packages/eslint-config)
 
 **.prettierrc.js**
 
@@ -34,8 +35,8 @@ module.exports = require('@smnielsen/prettier-config')
 
 ```
 "scripts": {
-  "eslint": "eslint 'src/**/*.{js,jsx}'",
-  "prettier": "prettier src/**/*.{js,md}",
+  "eslint": "eslint 'src/**/*.{js,ts,tsx,jsx}'",
+  "prettier": "prettier src/**/*.{js,ts,tsx,jsx,json,md}",
   "lint": "yarn run eslint && yarn run prettier -l",
   "lint:fix": "yarn run eslint --fix && yarn run prettier --write",
   ....
@@ -51,7 +52,7 @@ Use Husky + lint-staged to setup pre-commit hook for always keeping lint files i
 
 ```
 "lint-staged": {
-  "**/*.{js,jsx}": [
+  "**/*.{js,jsx,ts,tsx}": [
     "yarn run lint:fix",
     "git add"
   ],
