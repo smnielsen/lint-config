@@ -1,6 +1,6 @@
 {
   "name": "@smnielsen/eslint-config",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "ESLint configuration for smnielsen products",
   "keywords": [
     "eslint",
