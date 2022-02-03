@@ -9,7 +9,7 @@ Depending which linting you want to run you need to install different set of plu
 ### To start install the base that always is required
 
 ```sh
-yarn add -D eslint @smnielsen/eslint-config 
+yarn add -D eslint @smnielsen/eslint-config
 ```
 
 ### Then add an `.eslintrc.json` file with the following content to the root of your project and install dependencies
@@ -33,7 +33,6 @@ yarn add -D eslint @smnielsen/eslint-config
 ```terminal
 yarn add -D eslint-plugin-react eslint-config-react-app eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-react-hooks babel-eslint eslint-plugin-flowtype react
 ```
-
 
 #### Add linting for Vue
 

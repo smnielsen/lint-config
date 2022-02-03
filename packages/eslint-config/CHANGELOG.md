@@ -1,5 +1,11 @@
 # @smnielsen/eslint-config CHANGELOG
 
+## 2022-02-03 - v0.5.0
+
+### CHANGED
+
+- Updated all dependencies and changed node version to 16
+
 ## 2020-07-01 - v0.4.1
 
 ### CHANGED
