@@ -1,5 +1,11 @@
 # @smnielsen/eslint-config CHANGELOG
 
+## 2022-02-03 - v0.5.3
+
+### CHANGED
+
+- Using 'esnext' as module resolution
+
 ## 2022-02-03 - v0.5.0
 
 ### CHANGED
