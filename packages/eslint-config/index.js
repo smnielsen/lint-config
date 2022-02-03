@@ -15,7 +15,7 @@ module.exports = {
     browser: true,
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 'esnext',
     sourceType: 'module',
     ecmaFeatures: {
       modules: true,
