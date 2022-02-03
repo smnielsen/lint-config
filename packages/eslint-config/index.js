@@ -1,13 +1,12 @@
 module.exports = {
   extends: [
-    'standard',
     'plugin:import/errors',
     'plugin:import/warnings',
     'eslint:recommended',
     'plugin:promise/recommended',
     'plugin:security/recommended',
   ],
-  plugins: ['promise', 'import', 'security'],
+  plugins: ['standard', 'promise', 'import', 'security'],
   env: {
     commonjs: true,
     es6: true,
